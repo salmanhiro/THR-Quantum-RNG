@@ -26,14 +26,15 @@ def object_main():
     qrng.set_backend()
 
     st.title("Angpao Generator")
+    st.image('angpao.jpg', caption="Image by Jason Leung at Unsplash", width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 
-    st.write("Aplikasi untuk menentukan jumlah angpao secara random dengan quantum random number")
-    st.write("Disclaimer: angpao ditanggung pengguna aplikasi ini; salman tidak bertanggungjawab memberi angpao")
+    st.write("Apps to generate random number of angpao in IDR based on quantum random number")
+    st.write("Disclaimer: angpao given by user; salman isn't responsible for any angpao")
 
-    st.button('Klik disini', on_click=on_click_generate_number)
-    st.write('Selamat anda mendapat ', st.session_state.thr)
-    st.write("新年快樂, ")
+    st.button('Click here', on_click=on_click_generate_number)
+    st.write('Nice you get ', st.session_state.thr)
+    st.write("新年快樂")
 
 
 if __name__ == '__main__':
