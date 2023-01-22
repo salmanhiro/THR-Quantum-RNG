@@ -25,6 +25,16 @@ def object_main():
     qrng.set_provider_as_IBMQ('')
     qrng.set_backend()
 
+    st.markdown("""
+        <head>
+            <meta name="title" content="Angpao Generator">
+            <meta name="description" content="Aplikasi untuk menghasilkan angpao acak dalam IDR berdasarkan bilangan acak kuantum">
+            <meta name="keywords" content="Angpao, Kuantum, Acak, IDR">
+            <meta property="og:image" content="angpao.jpg">
+        </head>
+        """)
+
+
     st.title("Angpao Generator")
     st.image('angpao.jpg', caption="Image by Jason Leung at Unsplash", width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
