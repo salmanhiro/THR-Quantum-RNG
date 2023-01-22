@@ -26,7 +26,6 @@ def object_main():
     qrng.set_backend()
 
     st.title("Angpao Generator")
-    st.image('angpao.jpg', caption="Image by Jason Leung at Unsplash", width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 
     st.write("Aplikasi untuk menentukan jumlah angpao secara random dengan quantum random number")
