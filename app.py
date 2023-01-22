@@ -1,4 +1,3 @@
-from logging.config import valid_ident
 import qrng
 import streamlit as st
 
@@ -26,13 +25,16 @@ def object_main():
     qrng.set_provider_as_IBMQ('')
     qrng.set_backend()
 
-    st.title("THR Gacha Generator")
-    st.write("Aplikasi untuk menentukan jumlah THR secara random dengan quantum random number")
-    st.write("Disclaimer: THR ditanggung pengguna aplikasi ini; salman tidak bertanggungjawab memberi THR")
+    st.title("Angpao Generator")
+    st.image('angpao.jpg', caption="Image by Jason Leung at Unsplash", width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+
+
+    st.write("Aplikasi untuk menentukan jumlah angpao secara random dengan quantum random number")
+    st.write("Disclaimer: angpao ditanggung pengguna aplikasi ini; salman tidak bertanggungjawab memberi angpao")
 
     st.button('Klik disini', on_click=on_click_generate_number)
     st.write('Selamat anda mendapat ', st.session_state.thr)
-    st.write("Selamat lebaran mohon maaf lahir batin")
+    st.write("新年快樂, ")
 
 
 if __name__ == '__main__':
